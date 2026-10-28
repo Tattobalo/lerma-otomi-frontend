@@ -1,0 +1,67 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-4xl mx-auto px-4 py-8;
+}
+
+.title {
+  @apply text-2xl md:text-3xl font-bold text-emerald-800 mb-6 text-center;
+}
+
+.toggleContainer {
+  @apply flex justify-center mb-8 w-full;
+}
+
+.toggleBtn {
+  /* flex-nowrap evita que se apilen en pantallas muy estrechas */
+  @apply flex flex-row flex-nowrap items-center justify-center gap-2 md:gap-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold py-2 px-4 md:px-6 rounded-full transition-all border border-emerald-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+}
+
+.langTextLeft {
+  /* Ancho más pequeño (w-16) en móvil, y w-20 en pantallas grandes */
+  @apply w-16 md:w-20 text-right text-emerald-900 select-none text-sm md:text-base whitespace-nowrap;
+}
+
+.iconWrapper {
+  @apply flex items-center justify-center bg-emerald-200/50 p-2 rounded-full group-hover:rotate-180 transition-transform duration-300 shrink-0;
+}
+
+.icon {
+  @apply w-4 h-4 md:w-5 md:h-5 text-emerald-700;
+}
+
+.langTextRight {
+  @apply w-16 md:w-20 text-left text-emerald-900 select-none text-sm md:text-base whitespace-nowrap;
+}
+
+.loadingText {
+  @apply text-center text-emerald-600 mt-6 font-medium animate-pulse;
+}
+
+.gridContainer {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6 mt-8;
+}
+
+.emptyState {
+  @apply col-span-full text-center text-gray-500 bg-gray-50 py-8 rounded-lg border border-gray-100;
+}
+
+.boldText {
+  @apply font-semibold;
+}
+
+.filtersCard {
+  @apply bg-white rounded-2xl shadow-sm p-4 border border-emerald-100 mb-8;
+}
+
+.filtersGrid {
+  @apply grid md:grid-cols-3 gap-3 items-center;
+}
+
+.searchWrapper {
+  @apply w-full h-full;
+}
+
+.selectInput {
+  @apply w-full px-4 py-3 bg-emerald-50 border border-emerald-100 hover:border-emerald-300 focus:bg-white focus:border-emerald-500 rounded-xl outline-none font-semibold text-emerald-800 transition-all shadow-sm appearance-none h-full;
+}

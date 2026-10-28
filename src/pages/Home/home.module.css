@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-4xl mx-auto px-4 py-16 text-center;
+}
+
+.content {
+  @apply text-left mt-6;
+}
+
+.title {
+  @apply text-4xl font-bold text-emerald-800 mb-4;
+}
+
+.subtitle {
+  @apply text-lg text-gray-700 mb-4;
+}
+
+.description {
+  @apply text-lg text-gray-600 mb-6;
+}
+
+.buttonContainer {
+  @apply flex justify-end;
+}
+
+.button {
+  @apply bg-emerald-700 text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-emerald-800 transition-colors inline-block no-underline;
+}
